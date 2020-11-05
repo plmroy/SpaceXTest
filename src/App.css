@@ -1,0 +1,149 @@
+/*Mobile First Approach */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #ccc;
+  overflow-x: hidddn;
+}
+.heading{
+  padding:10px;
+  margin-left:15px;
+}
+.launch-year{
+  text-align: center;
+  font-weight: 600;
+}
+.wrapper{
+  width: 100%;
+}
+.filter{
+  padding: 10px;
+}
+.left-section .li-list{ 
+  border: 1px solid #BEF781;
+  background-color: #BEF781;
+  list-style-type: none;
+  margin: 5px 35px;
+  width: 70px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.left-section .li-list:active{
+  background-color: #5FB404;
+}
+.spaceXimg{
+  background-color: #ccc;
+  margin:39px;
+}
+.img-content{
+  margin:20px;
+  padding-bottom: 10px;
+}
+.left-section{
+  width:90%;
+  background-color: #fff;
+  margin:5%;
+}
+.right-section{
+  width:90%;
+  background-color: #fff;
+  margin:5%;
+}
+.footer{
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top:10px;
+}
+.missionTitle {
+  color: #2E2EFE;
+}
+/* tablet view  */
+@media only screen and (min-width:700px) and (max-width:1024px){
+  .right-section{
+    width: 68.6%;
+    float: left;
+    margin:16px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }
+  .left-section{
+    width: 25%;
+    float:left;
+    margin:2%;
+  }
+ 
+ .left-section .li-list {
+   width: 41px;
+   margin:12px;
+ }
+ .right-div{
+   width:50%;
+ }
+ .spaceXimg {
+   width: 212px;
+   margin:15px;
+ }
+ .footer{
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top:10px;
+}
+}
+
+/* desktop view*/
+@media only screen and (min-width:1024px) and (max-width:1440px){
+  .right-section{
+    width: 68.6%;
+    float: left;
+    margin:26px 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+  .left-section{
+    width: 25%;
+    float:left;
+    margin:2%;
+  }
+ 
+  .right-div{
+    width:24%;
+  }
+  .spaceXimg {
+    width: 200px;
+  }
+  .footer{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top:10px;
+  }
+} 
+/* ipad pro Portrait and Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .left-section {
+      width: 24%;
+    }
+    .right-section {
+      width: 70%;
+    }
+    .spaceXimg {
+      width: 130px;
+  }
+  .left-section .li-list {
+      width: 41px;
+      margin: 10px 29px;
+  }
+}
